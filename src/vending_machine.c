@@ -55,7 +55,7 @@ int PayByCash( int money, int payment )
   }
 }
 
-int PayByCard(char pin)
+int PayByCard(char pin[])
 {
    if (strlen(pin) == 4)
    {
