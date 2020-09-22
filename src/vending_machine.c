@@ -32,7 +32,7 @@ void MakePayment()
         printf("Insert your Debit/Credit card\n");
         printf("Enter the 4-digit PIN\n");
         //fflush(stdin);
-        scanf("%s", pin);
+        scanf("%9s", pin);
         PayByCard(pin);
     }
 }
