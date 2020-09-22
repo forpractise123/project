@@ -7,7 +7,7 @@ BUILD = build
 
 # All source code files
 SRC = main.c\
-src/src.c\
+src/vending_machine.c\
 
 # All test source files
 TEST_SRC = src/vending_machine.c\
