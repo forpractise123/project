@@ -51,7 +51,7 @@ int PayByCash( int money, int payment );
 * @param[in] Card PIN
 * @return Valid or Invalid PIN
 */
-int PayByCard(char pin[]);
+int PayByCard(int pin);
 
 /// Product Price
 int payment;
