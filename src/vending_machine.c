@@ -29,8 +29,7 @@ void MakePayment()
     else
     {
         char pin[10];
-        pin[9]='\0';
-        printf("Slide your Debit/Credit card\n");
+        printf("Insert your Debit/Credit card\n");
         printf("Enter the 4-digit PIN\n");
         //fflush(stdin);
         scanf("%9s", pin);
@@ -58,7 +57,8 @@ int PayByCash( int money, int payment )
 
 int PayByCard(char pin[])
 {
-  
+   strncpy(pin, argv[3], sizeof(pin)-1);
+   pin[9]='\0';
    if ((strlen(pin) == 4)&&(pin[3]!='0'))
    {
        int bal=1000;
