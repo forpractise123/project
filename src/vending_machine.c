@@ -1,4 +1,5 @@
-#include "vending_machine.h"
+#include <vending_machine.h>
+#include<math.h>
 void menu(void)
 {
   printf("*********************************************************************************************\n\n");
