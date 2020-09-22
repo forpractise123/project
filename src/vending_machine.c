@@ -1,5 +1,4 @@
 #include <vending_machine.h>
-#include<math.h>
 void menu(void)
 {
   printf("*********************************************************************************************\n\n");
@@ -58,7 +57,11 @@ int PayByCash( int money, int payment )
 
 int PayByCard(int pin)
 {
-   int n=floor(log10(pin) + 1);
+  int count=0,n; 
+  while (n != 0) { 
+        n = n / 10; 
+        ++count; 
+    } 
    if (n==4)
    {
        int bal=1000;
