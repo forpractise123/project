@@ -29,7 +29,7 @@ void MakePayment()
     else
     {
         char pin[10];
-        pin[10]='\0';
+        pin[9]='\0';
         printf("Slide your Debit/Credit card\n");
         printf("Enter the 4-digit PIN\n");
         //fflush(stdin);
