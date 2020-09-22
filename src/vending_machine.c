@@ -58,7 +58,9 @@ int PayByCash( int money, int payment )
 int PayByCard(int pin)
 {
   int n,count=0; 
-  while (n != 0) { 
+  n=pin;
+  while (n != 0) 
+  { 
         n = n / 10; 
         ++count; 
     } 
