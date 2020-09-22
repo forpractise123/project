@@ -13,7 +13,7 @@ int main()
 e:menu();
 
  printf("Enter Your Option: ");
- fflush(stdin);
+ //fflush(stdin);
  scanf("%d",&intro);
  printf("\n");
 
@@ -30,7 +30,7 @@ w:printf("----------------------------------------------------------\n\n");
   printf("Rules: You can pay using Cash or Credit/Debit card! \n\n\n");
 
   printf("Enter Your Option: ");
-  fflush(stdin);
+  //fflush(stdin);
   scanf("%d",&option);
   printf("\n\n");
 
@@ -52,7 +52,7 @@ w:printf("----------------------------------------------------------\n\n");
    printf("\n\n");
 
    printf("Choose Chocolate: ");
-   fflush(stdin);
+   //fflush(stdin);
    scanf("%d",&choice);
    printf("\n\n");
 
