@@ -28,11 +28,11 @@ void MakePayment()
     }
     else
     {
-        char pin[10];
+        int pin;
         printf("Insert your Debit/Credit card\n");
         printf("Enter the 4-digit PIN\n");
         //fflush(stdin);
-        scanf("%9s", pin);
+        scanf("%d", &pin);
         PayByCard(pin);
     }
 }
@@ -55,11 +55,9 @@ int PayByCash( int money, int payment )
   }
 }
 
-int PayByCard(char pin[])
+int PayByCard(int pin)
 {
-   strncpy(pin, argv[3], sizeof(pin)-1);
-   pin[9]='\0';
-   if ((strlen(pin) == 4)&&(pin[3]!='0'))
+   if (sizeof(pin) == 4)
    {
        int bal=1000;
        printf("Payment made successfully..\n");
