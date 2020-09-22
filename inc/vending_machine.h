@@ -10,6 +10,7 @@
 #include<stdio.h>
 #include <stdlib.h>
 //#include <stdio_ext.h>
+#include<math.h>
 #include<string.h>
 
 #define system
