@@ -10,7 +10,7 @@ SRC = main.c\
 src/vending_machine.c\
 
 # All test source files
-TEST_SRC = src/vending_machine.c\
+TEST_SRC = test/vending_machine.c\
 test/testatm.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
