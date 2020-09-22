@@ -57,11 +57,11 @@ int PayByCash( int money, int payment )
 
 int PayByCard(char pin[])
 {
-  int balance = 1000;
+  int bal = 1000;
    if (strlen(pin) == 4)
    {
        printf("Payment made successfully..\n");
-       printf("Your Balance: %d\n\n\n", balance-payment);
+       printf("Your Balance: %d\n\n\n", bal-payment);
        return 2;
    }
    else
