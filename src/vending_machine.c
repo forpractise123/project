@@ -15,7 +15,6 @@ void menu(void)
 void MakePayment()
 {
     int option, money;
-    char pin[5];
     printf("Select the Payment method\n");
     printf("1.Cash\n");
     printf("2.Credit/Debit card\n");
@@ -29,6 +28,7 @@ void MakePayment()
     }
     else
     {
+        char pin[10];
         printf("Slide your Debit/Credit card\n");
         printf("Enter the 4-digit PIN\n");
         //fflush(stdin);
