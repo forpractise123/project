@@ -18,7 +18,7 @@ void menu(void)
 void MakePayment()
 {
     int option, temp, money;
-    char pin[10];
+    char pin[];
     printf("Select the Payment method\n");
     printf("1.Cash\n");
     printf("2.Credit/Debit card\n");
