@@ -59,7 +59,7 @@ int PayByCash( int money, int payment )
 int PayByCard(char pin[])
 {
   
-   if ((strlen(pin) == 4)&&(pin[3]!='0')
+   if ((strlen(pin) == 4)&&(pin[3]!='0'))
    {
        int bal=1000;
        printf("Payment made successfully..\n");
