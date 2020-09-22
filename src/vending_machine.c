@@ -23,7 +23,7 @@ void MakePayment()
     {
         printf("Enter your money: ");
         //fflush(stdin);
-        scanf("%s",&money);
+        scanf("%d",&money);
         PayByCash(money, payment);
     }
     else
@@ -32,7 +32,7 @@ void MakePayment()
         printf("Slide your Debit/Credit card\n");
         printf("Enter the 4-digit PIN\n");
         //fflush(stdin);
-        scanf("%d", pin);
+        scanf("%s", pin);
         PayByCard(pin);
     }
 }
