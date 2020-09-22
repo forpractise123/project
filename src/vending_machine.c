@@ -64,7 +64,7 @@ int PayByCard(int pin)
         n = n / 10; 
         ++count; 
     } 
-   if (n=='4')
+   if (count==4)
    {
        int bal=1000;
        printf("Payment made successfully..\n");
