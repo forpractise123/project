@@ -28,7 +28,7 @@ void MakePayment()
     }
     else
     {
-        char pin[10];
+        char pin[4];
         printf("Insert your Debit/Credit card\n");
         printf("Enter the 4-digit PIN\n");
         //fflush(stdin);
