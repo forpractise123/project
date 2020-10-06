@@ -31,8 +31,6 @@ int main() {
   CU_add_test(suite, "PayByCash", test_InufficientCash);
   CU_add_test(suite, "PayByCard", test_ValidCard);
   CU_add_test(suite, "PayByCard", test_InvalidPin);
-  CU_add_test(suite, "chocolate", test_Selection);
-
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -63,9 +61,4 @@ void test_ValidCard(void) {
 void test_InvalidPin(void) {
   CU_ASSERT(INVALID_PIN  == PayByCard("25461"));
 }
-
-void test_Selection(void) {
-  CU_ASSERT(Selection  == chocolate("Cadbury Dairy Milk"));
-}
-
 
